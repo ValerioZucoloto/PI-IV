@@ -50,12 +50,12 @@ public class DespesasActivity extends AppCompatActivity {
 
 
 
-    public void salvarDespesa(View view){
+        public void salvarDespesa(View view){
 
         if ( validarCamposDespesa() ){
             movimentacao = new Movimentacao();
             String data = campoData.getText().toString();
-            Double  valorRecuperado = Double.parseDouble(campoValor.getText().toString());
+            Double valorRecuperado = Double.parseDouble(campoValor.getText().toString());
 
             movimentacao.setValor( valorRecuperado );
             movimentacao.setCategoria(campoCategoria.getText().toString());
