@@ -57,7 +57,7 @@ public class ReceitasActivity extends AppCompatActivity {
             movimentacao.setData(data);
             movimentacao.setTipo( "r" );
 
-            Double receitaAtualizada = receitaTotal + valorRecuperado;
+            double receitaAtualizada = receitaTotal + valorRecuperado;
             atualizarReceita(receitaAtualizada);
 
             movimentacao.salvar(data);
