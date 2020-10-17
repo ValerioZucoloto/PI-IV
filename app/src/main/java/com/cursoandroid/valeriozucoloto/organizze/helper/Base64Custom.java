@@ -1,4 +1,4 @@
-package helper;
+package com.cursoandroid.valeriozucoloto.organizze.helper;
 
 import android.util.Base64;
 

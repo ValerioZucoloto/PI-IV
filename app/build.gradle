@@ -7,13 +7,14 @@ android {
 
     defaultConfig {
         applicationId "com.cursoandroid.valeriozucoloto.organizze"
-        minSdkVersion 23
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
 
     buildTypes {
         release {
@@ -34,11 +35,17 @@ dependencies {
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.navigation:navigation-fragment:2.3.0'
     implementation 'androidx.navigation:navigation-ui:2.3.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.github.clans:fab:1.6.4'
     implementation 'com.prolificinteractive:material-calendarview:1.4.3'
+
+
+
+
+
 
 
 

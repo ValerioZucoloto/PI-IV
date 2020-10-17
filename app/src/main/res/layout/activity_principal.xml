@@ -31,7 +31,6 @@
         android:layout_margin="10dp"
         fab:menu_icon="@drawable/ic_adicionar_branco"
         app:menu_colorNormal="@color/colorAccent"
-        app:menu_colorPressed="@color/colorAccent"
         >
 
         <com.github.clans.fab.FloatingActionButton
@@ -43,7 +42,6 @@
             app:fab_size="mini"
             app:fab_colorNormal="@color/colorPrimaryDarkDespesa"
             android:onClick="adicionarDespesa"
-            app:fab_colorPressed="#FFF000"
             >
 
         </com.github.clans.fab.FloatingActionButton>
@@ -57,7 +55,7 @@
             app:fab_size="mini"
             app:fab_colorNormal="@color/colorPrimaryDarkReceita"
             android:onClick="adicionarReceita"
-            app:fab_colorPressed="#FFF000"
+            app:fab_colorPressed="@color/colorPrimaryReceita"
             >
 
         </com.github.clans.fab.FloatingActionButton>

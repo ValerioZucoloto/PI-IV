@@ -4,8 +4,8 @@ import com.cursoandroid.valeriozucoloto.organizze.config.ConfiguracaoFirebase;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 
-import helper.Base64Custom;
-import helper.DateUltil;
+import com.cursoandroid.valeriozucoloto.organizze.helper.Base64Custom;
+import com.cursoandroid.valeriozucoloto.organizze.helper.DateUltil;
 
 public class Movimentacao {
     private String Data;
