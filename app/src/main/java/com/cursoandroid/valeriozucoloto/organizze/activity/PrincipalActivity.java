@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,6 +38,8 @@ public class PrincipalActivity extends AppCompatActivity {
     private TextView textoSaudacao, textoSaldo;
     private FirebaseAuth autenticacao = ConfiguracaoFirebase.geFirebaseAutenticacao();
     private DatabaseReference firebaseRef = ConfiguracaoFirebase.getFirebaseDatabase();
+    private DatabaseReference usuarioRef;
+    private ValueEventListener valueEventListenerUsuario;
     private double despesaTotal = 0.0;
     private double receitaTotal = 0.0;
     private double resumoUsuario = 0.0;
@@ -54,16 +57,23 @@ public class PrincipalActivity extends AppCompatActivity {
         textoSaudacao = findViewById(R.id.textSaudacao);
 
         configuraCalendarView();
-        recuperarResumo();
 
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        recuperarResumo();
     }
 
     public void recuperarResumo(){
         String emailUsuario = autenticacao.getCurrentUser().getEmail();
         String idUsuario = Base64Custom.codificarBase64(emailUsuario);
-        DatabaseReference usuarioRef = firebaseRef.child("usuarios").child(idUsuario);
+        usuarioRef = firebaseRef.child("usuarios").child(idUsuario);
 
-        usuarioRef.addValueEventListener(new ValueEventListener() {
+        Log.i("Evento","evento foi adicionado!");
+        valueEventListenerUsuario = usuarioRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Usuario usuario = dataSnapshot.getValue(Usuario.class);
@@ -122,6 +132,10 @@ public class PrincipalActivity extends AppCompatActivity {
         });
     }
 
-
-
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("Evento","evento foi removido!");
+        usuarioRef.removeEventListener(valueEventListenerUsuario);
+    }
 }
