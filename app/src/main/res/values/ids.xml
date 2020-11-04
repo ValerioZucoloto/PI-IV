@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textAdapterTitulo" type="id" />
+    <item name="textAdapterValor" type="id" />
+    <item name="textAdapterCategoria" type="id" />
+</resources>
