@@ -51,7 +51,7 @@ public class PrincipalActivity extends AppCompatActivity {
 
     private ValueEventListener valueEventListenerMovimentacoes;
 
-    private RecyclerView recyclerView;
+    private RecyclerView recyclerView; 
     private AdapterMovimentacao adapterMovimentacao;
     private List<Movimentacao> movimentacoes = new ArrayList<>();
     private DatabaseReference movimentacaoRef;
