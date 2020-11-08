@@ -17,3 +17,9 @@
 
 ## Quarto slider
 <img src="https://github.com/ValerioZucoloto/PI-IV/blob/main/Quarto%20Slider.jpeg" height="500" >
+
+
+
+## Intro cadastro
+<img src="https://github.com/ValerioZucoloto/PI-IV/blob/main/Intro%20cadastro.jpeg" height="500" >
+
