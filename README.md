@@ -23,3 +23,8 @@
 ## Intro cadastro
 <img src="https://github.com/ValerioZucoloto/PI-IV/blob/main/Intro%20cadastro.jpeg" height="500" >
 
+## Tela Cadastro
+<img src="https://github.com/ValerioZucoloto/PI-IV/blob/main/Tela%20cadastro.jpeg" height="500" >
+
+## Tela login
+<img src="https://github.com/ValerioZucoloto/PI-IV/blob/main/Tela%20Login.jpeg" height="500" >
