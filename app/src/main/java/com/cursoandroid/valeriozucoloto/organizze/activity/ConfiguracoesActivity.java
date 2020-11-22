@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.cursoandroid.valeriozucoloto.organizze.R;
+
 public class ConfiguracoesActivity extends AppCompatActivity {
 
     @Override

@@ -1,9 +1,15 @@
 package com.cursoandroid.valeriozucoloto.organizze.activity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.cursoandroid.valeriozucoloto.organizze.R;
@@ -22,6 +28,7 @@ public class MainActivity extends IntroActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
+        autenticacao = ConfiguracaoFirebase.geFirebaseAutenticacao();
 
         setButtonBackVisible(false);
         setButtonNextVisible(false);
@@ -75,7 +82,6 @@ public class MainActivity extends IntroActivity {
     }
 
     public void verificarUsuarioLogado(){
-        autenticacao = ConfiguracaoFirebase.geFirebaseAutenticacao();
         //autenticacao.signOut();
         if (autenticacao.getCurrentUser() != null) {
             abrirTelaPrincipal();
@@ -86,4 +92,40 @@ public class MainActivity extends IntroActivity {
         startActivity(new Intent(this, PrincipalActivity.class));
     }
 
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_principal, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.menuSair:
+                deslogarUsuario();
+                finish();
+                break;
+            case  R.id.menuConfiguracoes:
+                Log.i("teste", "1");
+
+                abrirConfiguracoes();
+                break;
+        }
+
+        return true;
+    }
+
+    public void deslogarUsuario(){
+        try {
+            autenticacao.signOut();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    public void abrirConfiguracoes(){
+        Intent intent = new Intent(MainActivity.this, ConfiguracoesActivity.class);
+        startActivity(intent);
+    }
+
 }
+

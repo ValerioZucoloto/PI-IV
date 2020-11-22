@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "269666345159",
-    "firebase_url": "https://organizze-6d347.firebaseio.com",
-    "project_id": "organizze-6d347",
-    "storage_bucket": "organizze-6d347.appspot.com"
+    "project_number": "885940833309",
+    "firebase_url": "https://projeto-pi-63856.firebaseio.com",
+    "project_id": "projeto-pi-63856",
+    "storage_bucket": "projeto-pi-63856.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:269666345159:android:6578ef21c347dbb1afdee2",
+        "mobilesdk_app_id": "1:885940833309:android:7c9405ef23fbe9cace4af4",
         "android_client_info": {
           "package_name": "com.cursoandroid.valeriozucoloto.organizze"
         }
       },
       "oauth_client": [
         {
-          "client_id": "269666345159-8f3hs5vv3c24j9glparv1ie2krob01t4.apps.googleusercontent.com",
+          "client_id": "885940833309-f1kgpu9u1sifdvk54ftodffqh7mt2ff6.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.cursoandroid.valeriozucoloto.organizze",
@@ -23,20 +23,20 @@
           }
         },
         {
-          "client_id": "269666345159-n4ird6ti08j7o0ed33g9v0vmsr2r2ebh.apps.googleusercontent.com",
+          "client_id": "885940833309-magufaeg6r1eo3b59stfsritjpqqj7fq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD5Z6tPaE6nPoaaUfevhh4YWFpYzMWZqKI"
+          "current_key": "AIzaSyCSRG5Uut239HKoawQD2g8tGFuk2GJwep0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "269666345159-n4ird6ti08j7o0ed33g9v0vmsr2r2ebh.apps.googleusercontent.com",
+              "client_id": "885940833309-magufaeg6r1eo3b59stfsritjpqqj7fq.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
