@@ -8,4 +8,11 @@
         android:title="Sair"
         app:showAsAction="never"
         />
+
+    <item
+        android:id="@+id/menuConfiguracoes"
+        android:orderInCategory="100"
+        android:title="Configuracoes"
+        app:showAsAction="never"
+        />
 </menu>
