@@ -127,5 +127,9 @@ public class MainActivity extends IntroActivity {
         startActivity(intent);
     }
 
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> 8861d60c31d3385aac0cfa087599dc5549641388
