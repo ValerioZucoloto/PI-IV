@@ -24,11 +24,7 @@
         <option name="SIM_TOC_BLANK_LINE_SPACER" value="true" />
       </ParserOptions>
     </ParserSettings>
-<<<<<<< HEAD
     <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" addPageHeader="false" addAnchorLinks="false" anchorLinksWrapText="false" imageUriSerials="false" addDocTypeHtml="true" noParaTags="false" defaultUrlTitle="false" migratedPlantUml="true" migratedAnchorLinks="true" plantUmlConversion="0">
-=======
-    <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" addPageHeader="false" addAnchorLinks="true" anchorLinksWrapText="false" imageUriSerials="false" addDocTypeHtml="true" noParaTags="false" defaultUrlTitle="false" migratedPlantUml="false" migratedAnchorLinks="false" plantUmlConversion="0">
->>>>>>> 8861d60c31d3385aac0cfa087599dc5549641388
       <GeneratorProvider>
         <provider providerId="com.vladsch.md.nav.editor.text.html.generator" providerName="Unmodified HTML Generator" />
       </GeneratorProvider>
@@ -36,7 +32,6 @@
       <headerBottom />
       <bodyTop />
       <bodyBottom />
-<<<<<<< HEAD
       <fencedCodeConversions>
         <option name="c4plantuml" value="NONE" />
         <option name="ditaa" value="NONE" />
@@ -54,9 +49,6 @@
         <option name="vegalite" value="NONE" />
         <option name="wavedrom" value="NONE" />
       </fencedCodeConversions>
-=======
-      <fencedCodeConversions />
->>>>>>> 8861d60c31d3385aac0cfa087599dc5549641388
     </HtmlSettings>
     <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="true" isCssTextEnabled="false" isDynamicPageWidth="true">
       <StylesheetProvider>

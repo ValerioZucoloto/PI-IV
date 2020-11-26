@@ -33,31 +33,31 @@ public class MainActivity extends IntroActivity {
         setButtonBackVisible(false);
         setButtonNextVisible(false);
 
-        addSlide( new FragmentSlide.Builder()
+        addSlide(new FragmentSlide.Builder()
                 .background(android.R.color.white)
                 .fragment(R.layout.intro_1)
                 .build()
         );
 
-        addSlide( new FragmentSlide.Builder()
+        addSlide(new FragmentSlide.Builder()
                 .background(android.R.color.white)
                 .fragment(R.layout.intro_2)
                 .build()
         );
 
-        addSlide( new FragmentSlide.Builder()
+        addSlide(new FragmentSlide.Builder()
                 .background(android.R.color.white)
                 .fragment(R.layout.intro_3)
                 .build()
         );
 
-        addSlide( new FragmentSlide.Builder()
+        addSlide(new FragmentSlide.Builder()
                 .background(android.R.color.white)
                 .fragment(R.layout.intro_4)
                 .build()
         );
 
-        addSlide( new FragmentSlide.Builder()
+        addSlide(new FragmentSlide.Builder()
                 .background(android.R.color.white)
                 .fragment(R.layout.intro_cadastro)
                 .canGoForward(false)
@@ -72,64 +72,24 @@ public class MainActivity extends IntroActivity {
         verificarUsuarioLogado();
     }
 
-    public void brEntrar(View view){
+    public void brEntrar(View view) {
         startActivity(new Intent(this, LoginActivity.class));
     }
 
 
-    public void btCadastrar (View view){
-       startActivity(new Intent(this, CadastroActivity.class));
+    public void btCadastrar(View view) {
+        startActivity(new Intent(this, CadastroActivity.class));
     }
 
-    public void verificarUsuarioLogado(){
+    public void verificarUsuarioLogado() {
         //autenticacao.signOut();
         if (autenticacao.getCurrentUser() != null) {
             abrirTelaPrincipal();
         }
     }
 
-    public void abrirTelaPrincipal(){
+    public void abrirTelaPrincipal() {
         startActivity(new Intent(this, PrincipalActivity.class));
     }
 
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_principal, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch(item.getItemId()){
-            case R.id.menuSair:
-                deslogarUsuario();
-                finish();
-                break;
-            case  R.id.menuConfiguracoes:
-                Log.i("teste", "1");
-
-                abrirConfiguracoes();
-                break;
-        }
-
-        return true;
-    }
-
-    public void deslogarUsuario(){
-        try {
-            autenticacao.signOut();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }
-
-    public void abrirConfiguracoes(){
-        Intent intent = new Intent(MainActivity.this, ConfiguracoesActivity.class);
-        startActivity(intent);
-    }
-
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> 8861d60c31d3385aac0cfa087599dc5549641388

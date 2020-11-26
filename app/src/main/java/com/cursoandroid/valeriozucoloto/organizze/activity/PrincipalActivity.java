@@ -239,9 +239,19 @@ public class PrincipalActivity extends AppCompatActivity {
                 startActivity(new Intent(this, MainActivity.class));
                 finish();
                 break;
+
+            case R.id.menuConfiguracoes :
+                abrirConfiguracoes();
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void abrirConfiguracoes() {
+        Intent intent = new Intent(PrincipalActivity.this, ConfiguracoesActivity.class);
+        startActivity(intent);
+    }
+
 
     public void adicionarDespesa(View view){
         startActivity(new Intent(this, DespesasActivity.class));
