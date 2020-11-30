@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.cursoandroid.valeriozucoloto.organizze.R;
 import com.cursoandroid.valeriozucoloto.organizze.config.ConfiguracaoFirebase;
+import com.cursoandroid.valeriozucoloto.organizze.helper.UsuarioFireBase;
 import com.cursoandroid.valeriozucoloto.organizze.model.Usuario;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -83,6 +84,7 @@ public class CadastroActivity extends AppCompatActivity {
                     String idUsuario = Base64Custom.codificarBase64( usuario.getEmail());
                     usuario.setIdUsuario(idUsuario);
                     usuario.salvar();
+                    UsuarioFireBase.atualizarNomeUsuario(usuario.getNome());
                     finish();
 
                 }else{

@@ -36,6 +36,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.3.0'
     implementation 'androidx.navigation:navigation-ui:2.3.0'
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
@@ -43,6 +44,7 @@ dependencies {
     implementation 'com.prolificinteractive:material-calendarview:1.4.3'
     implementation 'com.google.firebase:firebase-bom:26.0.0'
     implementation 'com.google.firebase:firebase-database:18.0.0'
+    implementation 'com.firebaseui:firebase-ui-storage:6.4.0'
     //Dependencia para arredondar a imagem
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 
